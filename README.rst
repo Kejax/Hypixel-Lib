@@ -21,10 +21,29 @@ What is included in this Lib?
 
 This Lib includes nearly all features from the Hypixel API
 some features of the Mojang API and the Mojang SessionServer
-returns pictures from the `plancke.io <https://plancke.io>` picture generator
+returns pictures from the `plancke.io <https://plancke.io>`__ picture generator
 
 Import Hypixel-Lib in Python
 -----------------------------
 
+.. code:: sh
+    
+    pip install hypixel-lib
+
 .. code:: python
-  pip install hypixel-lib
+
+    import Hypixel-Lib
+    
+Code Examples
+^^^^^^^^^^^^^
+
+.. code:: python
+    
+    import HypixelLib
+    
+    hypixel = HypixelLib.Hypixel("<APIKEY>")
+    
+    player = hypixel.player.get(name="name", uuid="uuid")
+    print(player.name)
+    print(player.rank.name)
+    print(player.uuid)
