@@ -41,7 +41,8 @@
 
     
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
-    <link rel="search" title="Suche" href="search.html" /> 
+    <link rel="search" title="Suche" href="search.html" />
+    <link rel="next" title="Player" href="player/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,16 +87,11 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Hypixel-Lib Documentation</a><ul>
-<li><a class="reference internal" href="#install-hypixel-lib">Install Hypixel-Lib</a></li>
-<li><a class="reference internal" href="#guide">Guide</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Player</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="player/index.html">Player</a></li>
 </ul>
-</li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
-</ul>
-</div>
+
             
           
         </div>
@@ -165,14 +161,32 @@
 <h1>Hypixel-Lib Documentation<a class="headerlink" href="#hypixel-lib-documentation" title="Link zu dieser Überschrift">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<div class="section" id="install-hypixel-lib">
-<h2>Install Hypixel-Lib<a class="headerlink" href="#install-hypixel-lib" title="Link zu dieser Überschrift">¶</a></h2>
-<div class="highlight-python notranslate" id="this-py"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">Hypixel</span><span class="o">-</span><span class="n">Lib</span>
+<div class="section" id="hypixel-lib-installieren">
+<h2>Hypixel-Lib installieren:<a class="headerlink" href="#hypixel-lib-installieren" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Hypixel-Lib via pip installieren:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install hypixellib
+</pre></div>
+</div>
+<p>Und im Skript importieren:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">HypixelLib</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="guide">
-<h2>Guide<a class="headerlink" href="#guide" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="how-to-hypixel-lib-benutzen">
+<h2>How to: Hypixel-Lib benutzen:<a class="headerlink" href="#how-to-hypixel-lib-benutzen" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">HypixelLib</span>
+
+<span class="n">hypixel</span> <span class="o">=</span> <span class="n">HypixelLib</span><span class="o">.</span><span class="n">hypixel</span><span class="p">(</span><span class="o">&lt;</span><span class="n">APIKEY</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="n">player</span> <span class="o">=</span> <span class="n">hypixel</span><span class="o">.</span><span class="n">Player</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="o">=&lt;</span><span class="n">Your</span> <span class="n">Name</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Dieser Code gibt den Namen des Spielers aus, wenn er jemals auf Hypixel gejoint ist.</p>
+</div>
+<div class="section" id="wie-bekomme-ich-den-api-schlussel">
+<h2>Wie bekomme ich den API Schlüssel?<a class="headerlink" href="#wie-bekomme-ich-den-api-schlussel" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Du bekommst den API Schlüssel, indem du <code class="docutils literal notranslate"><span class="pre">/api</span> <span class="pre">new</span></code> auf dem Hypixel Server(<code class="docutils literal notranslate"><span class="pre">play.hypixel.net</span></code>)
+eingibst.</p>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
@@ -189,6 +203,9 @@
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="player/index.html" class="btn btn-neutral float-right" title="Player" accesskey="n" rel="next">Weiter <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
