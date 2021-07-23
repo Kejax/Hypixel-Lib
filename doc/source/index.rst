@@ -3,19 +3,49 @@ Hypixel-Lib Documentation
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :caption: Player
+   :glob:
+   :hidden:
+   
+   player/*
 
-Install Hypixel-Lib
-^^^^^^^^^^^^^^^^^^^^
+   
+
+Hypixel-Lib installieren:
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Hypixel-Lib via pip installieren:
+
+.. code-block:: sh
+   
+   pip install hypixellib
+
+Und im Skript importieren:
 
 .. code-block:: python
-   :name: this-py
 
-   pip install Hypixel-Lib
+    import HypixelLib
 
-Guide
-^^^^^^^^^^
+How to: Hypixel-Lib benutzen:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    import HypixelLib
+    
+    hypixel = HypixelLib.hypixel(<APIKEY>)
+    player = hypixel.Player.get(name=<Your Name>)
+    print(player.name)
+
+Dieser Code gibt den Namen des Spielers aus, wenn er jemals auf Hypixel gejoint ist.
+
+
+Wie bekomme ich den API Schlüssel?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Du bekommst den API Schlüssel, indem du ``/api new`` auf dem Hypixel Server(``play.hypixel.net``)
+eingibst.
+
 
 
 Indices and tables

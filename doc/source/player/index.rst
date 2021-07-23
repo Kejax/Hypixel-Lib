@@ -1,0 +1,8 @@
+Player
+=======
+
+.. toctree::
+   :glob:
+
+   Bedwars/*
+   

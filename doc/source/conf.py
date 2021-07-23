@@ -10,10 +10,10 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
 import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+#import os
 
 
 # -- Project information -----------------------------------------------------
@@ -53,7 +53,7 @@ on_rtd = os.environ.get('READTHEDOCS') == 'True'
 if on_rtd:
     html_theme = 'sphinx_rtd_theme'
 else:
-    html_theme = 'default'
+    html_theme = 'sphinx_rtd_theme'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
