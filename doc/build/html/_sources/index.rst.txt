@@ -6,6 +6,7 @@ Hypixel-Lib Documentation
    :caption: Player
    :glob:
    :hidden:
+   :titlesonly:
    
    player/*
 
