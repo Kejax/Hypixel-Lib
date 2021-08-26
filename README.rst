@@ -23,6 +23,8 @@ This Lib includes nearly all features from the Hypixel API
 some features of the Mojang API and the Mojang SessionServer
 returns pictures from the `plancke.io <https://plancke.io>`__ picture generator
 
+(Mojang SessionServer, Mojang API & plancke features not build in yet) 
+
 Import Hypixel-Lib in Python
 -----------------------------
 
