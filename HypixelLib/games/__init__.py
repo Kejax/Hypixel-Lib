@@ -1,0 +1,1 @@
+from .bedwars import Bedwars
