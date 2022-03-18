@@ -9,6 +9,12 @@ The Lib to request Hypixel API
 With this API you're able to get much more info from the public Hypixel API
 as from hypixelaPY
 
+Big update is coming soon!
+--------------------------
+
+I'm working on a big update to offer more functions regarding information from the API, such as leaderboards, guilds, friends and else. Also I'm working on the (documentation)[https://hypixel-lib.readthedocs.io] to offer a documentation to explain most of the library.
+If you got code or ideas for the library, please open a pull request
+
 
 Why I should use it?
 ---------------------
@@ -30,11 +36,11 @@ Import Hypixel-Lib in Python
 
 .. code:: sh
     
-    pip install hypixel-lib
+    pip install hypixellib
 
 .. code:: python
 
-    import Hypixel-Lib
+    import HypixelLib
     
 Code Examples
 ^^^^^^^^^^^^^
