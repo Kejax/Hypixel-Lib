@@ -12,7 +12,7 @@ as from hypixelaPY
 Big update is coming soon!
 --------------------------
 
-I'm working on a big update to offer more functions regarding information from the API, such as leaderboards, guilds, friends and else. Also I'm working on the [documentation](https://hypixel-lib.readthedocs.io) to offer a documentation to explain most of the library.
+I'm working on a big update to offer more functions regarding information from the API, such as leaderboards, guilds, friends and else. Also I'm working on the `documentation <https://hypixel-lib.readthedocs.io>`to offer a documentation to explain most of the library.
 If you got code or ideas for the library, please open a pull request
 
 
