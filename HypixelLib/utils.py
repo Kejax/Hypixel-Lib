@@ -9,15 +9,12 @@ def key_check(api):
 		raise InvalidAPIKeyError(api)
 	return APIKey
 
-
 class Games:
 
 	def __init__(self, played, wins, lost):
 		self.played = played
 		self.wins = wins
 		self.lost = lost
-
-
 
 class Prestige:
 

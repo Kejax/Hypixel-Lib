@@ -27,6 +27,7 @@ class Bedwars:
 			data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("wins_bedwars"),
 			data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("losses_bedwars")
 			)
+		self.winstreak = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("winstreak")
 		
 		#Beds
 		self.beds = Beds(
@@ -37,8 +38,11 @@ class Bedwars:
 		#Kills/Deaths
 		self.kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("kills_bedwars", 0)
 		self.final_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("final_kills_bedwars", 0)
+		self.void_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("void_kills_bedwars", 0)
+		self.void_final_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("void_final_kills_bedwars", 0)
 		self.deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("deaths_bedwars", 0)
 		self.final_deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("final_deaths_bedwars", 0)
+		self.void_deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("void_deaths_bedwars", 0)
 		
 		#Items
 		self.items = Items(data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("items_purchased_bedwars", 0))
@@ -65,6 +69,7 @@ class Solo:
 			data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_wins_bedwars", 0),
 			data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_losses_bedwars", 0),
 			)
+		self.winstreak = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_winstreak")
 
 		#Beds
 		self.beds = Beds(
@@ -75,8 +80,12 @@ class Solo:
 		#Kills/Deaths
 		self.kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_kills_bedwars", 0)
 		self.final_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_final_kills_bedwars", 0)
+		self.void_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_void_kills_bedwars", 0)
+		self.void_final_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_void_final_kills_bedwars", 0)
 		self.deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_deaths_bedwars", 0)
 		self.final_deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_final_deaths_bedwars", 0)
+		self.void_deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_void_deaths_bedwars", 0)
+		self.void_deaths_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_void_final_deaths_bedwars", 0)
 
 		#Items
 		self.items = Items(data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_one_items_purchased_bedwars", 0))
@@ -101,6 +110,7 @@ class Duo:
 			data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_wins_bedwars", 0),
 			data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_losses_bedwars", 0)
 			)
+		self.winstreak = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_winstreak")
 
 		#Beds
 		self.beds = Beds(
@@ -111,8 +121,12 @@ class Duo:
 		#Kills/Deaths
 		self.kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_kills_bedwars", 0)
 		self.final_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_final_kills_bedwars", 0)
+		self.void_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_void_kills_bedwars", 0)
+		self.void_final_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_void_final_kills_bedwars", 0)
 		self.deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_deaths_bedwars", 0)
 		self.final_deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_final_deaths_bedwars", 0)
+		self.void_deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_void_deaths_bedwars", 0)
+		self.void_deaths_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_void_final_deaths_bedwars", 0)
 
 		#Items
 		self.items = Items(data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("eight_two_items_purchased_bedwars", 0))
@@ -137,6 +151,7 @@ class Trio:
 			data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_wins_bedwars", 0),
 			data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_losses_bedwars", 0),
 			)
+		self.winstreak = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_winstreak")
 
 		#Beds
 		self.beds = Beds(
@@ -147,8 +162,12 @@ class Trio:
 		#Kills/Deaths
 		self.kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_kills_bedwars", 0)
 		self.final_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_final_kills_bedwars", 0)
+		self.void_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_void_kills_bedwars", 0)
+		self.void_final_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_void_final_kills_bedwars", 0)
 		self.deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_deaths_bedwars", 0)
 		self.final_deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_final_deaths_bedwars", 0)
+		self.void_deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_void_deaths_bedwars", 0)
+		self.void_deaths_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_void_final_deaths_bedwars", 0)
 
 		#Items
 		self.items = Items(data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_three_items_purchased_bedwars", 0))
@@ -173,6 +192,7 @@ class Squad:
 			data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_wins_bedwars", 0),
 			data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_losses_bedwars", 0),
 			)
+		self.winstreak = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_winstreak")
 
 		#Beds
 		self.beds = Beds(
@@ -183,8 +203,12 @@ class Squad:
 		#Kills/Deaths
 		self.kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_kills_bedwars", 0)
 		self.final_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_final_kills_bedwars", 0)
+		self.void_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_void_kills_bedwars", 0)
+		self.void_final_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_void_final_kills_bedwars", 0)
 		self.deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_deaths_bedwars", 0)
 		self.final_deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_final_deaths_bedwars", 0)
+		self.void_deaths = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_void_deaths_bedwars", 0)
+		self.void_deaths_kills = data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_void_final_deaths_bedwars", 0)
 
 		#Items
 		self.items = Items(data.get("player", {}).get("stats", {}).get("Bedwars", {}).get("four_four_items_purchased_bedwars", 0))
